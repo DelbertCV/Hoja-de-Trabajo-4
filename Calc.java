@@ -1,25 +1,37 @@
 import java.util.*;
 import java.io.*;
+import java.util.Scanner;
 
 @SuppressWarnings("unused")
 public class Calc implements ADTCalculadora<Double>{
 	
 	private int resultado;
 	private String everything;
-
 	private Stack<Double> Pila;
+	private int sel;
 	
-	public Calc(int i){
-		if (i==0){
+	public int   Factory () {
+	   Scanner scanner = new Scanner(System.in);
+	   System.out.println("Ingrese: ");
+	   System.out.println("0 para utilizar Vector");
+	   System.out.println("1 para utilizar Array");
+	   System.out.println("2 para utilizar Lista Simple");
+	   System.out.println("3 para utilizar Lista Doble");
+	   System.out.println("4 para utilizar Lista Circular");
+	   sel = scanner.nextInt();
+  }
+	
+	public Calc(){
+		if (sel==0){
 			Pila = new IVector();
 		}
-		else if (i==1){
+		else if (sel==1){
 					Pila = new IArray();
 				}
-			else if (i==2){
+			else if (sel==2){
 					Pila = new ListaSimple();
 					}
-				else if (i==3){
+				else if (sel==3){
 					Pila = new ListaDoble();
 				}
 					else {
