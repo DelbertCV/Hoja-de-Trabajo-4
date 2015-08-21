@@ -7,15 +7,15 @@ import java.util.*;
  * Clase encargada de implementar la clase Vector de Java para
  * el Stack
  *
- * @param <Integer>
+ * @param <Double>
  */
 @SuppressWarnings("hiding")
-public class IVector<Integer> extends Stack<Integer>{
+public class IVector<Double> extends Stack<Double>{
 	
-	private Vector<Integer> v ;
+	private Vector<Double> v ;
 	
 	public IVector(){
-		v = new Vector<Integer>();
+		v = new Vector<Double>();
 	}
 	
 	@Override
@@ -30,13 +30,13 @@ public class IVector<Integer> extends Stack<Integer>{
 	}
 
 	@Override
-	public void push(Integer x) {
+	public void push(Double x) {
 		// TODO Auto-generated method stub
 		v.add(x);
 	}
 
 	@Override
-	public Integer pop() throws Exception {
+	public Double pop() throws Exception {
 		// TODO Auto-generated method stub
 		if (v.isEmpty())
 			throw new Exception("Su vector se encuentra vacio");
@@ -51,7 +51,7 @@ public class IVector<Integer> extends Stack<Integer>{
 	}
 
 	@Override
-	public Integer peek() throws Exception {
+	public Double peek() throws Exception {
 		if (v.isEmpty())
 			throw new Exception("Su vector se encuentra vacio");
 		else

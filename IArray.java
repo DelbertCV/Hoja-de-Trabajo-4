@@ -6,14 +6,14 @@ import java.util.*;
  * 
  * Implementacion de una ArrayList para la clase Stack
  *
- * @param <Integer>
+ * @param <Double>
  */
 @SuppressWarnings("hiding")
-public class IArray<Integer> extends Stack<Integer>{
-	private ArrayList<Integer> v;
+public class IArray<Double> extends Stack<Double>{
+	private ArrayList<Double> v;
 	
 	public IArray(){
-		v = new ArrayList<Integer>();
+		v = new ArrayList<Double>();
 	}
 	
 	@Override
@@ -29,13 +29,13 @@ public class IArray<Integer> extends Stack<Integer>{
 	}
 
 	@Override
-	public void push(Integer x) {
+	public void push(Double x) {
 		// TODO Auto-generated method stub
 		v.add(x);
 	}
 
 	@Override
-	public Integer pop() throws Exception {
+	public Double pop() throws Exception {
 		// TODO Auto-generated method stub
 		if (v.isEmpty())
 			throw new Exception("Su vector se encuentra vacio");
@@ -50,7 +50,7 @@ public class IArray<Integer> extends Stack<Integer>{
 	}
 
 	@Override
-	public Integer peek() throws Exception {
+	public Double peek() throws Exception {
 		// TODO Auto-generated method stub
 		if (v.isEmpty())
 			throw new Exception("Su vector se encuentra vacio");

@@ -28,7 +28,7 @@ public class Driver {
 			System.out.println("----------------------------------------------------------");
 			if (b == 1){
 			System.out.println("Universidad del Valle de Guatemala \n Algoritmos y Estructuras de Datos\n");
-			System.out.println("Seccion 10 \n Delbert Custodio, 14246 \n Jonathan Aguirre, 14349 \n Samuel Diaz, 14083");
+			System.out.println("Seccion 10 \n Delbert Custodio, 14246 \n Jonathan Aguirre, 14349 \n");
 			}
 			System.out.println();
 	
@@ -37,8 +37,11 @@ public class Driver {
 	
 			DireccionArchivo = Scan.nextLine();
 			System.out.println();
-	
-			Calcu = new Calc();
+			
+			
+			//Pregunta aqui de que tipo quiere
+			//0 -> Vector, 1-> ArrayList, 2->ListaSimple, 3->ListaDoble,cualquier otro ->ListaCircular
+			//Calcu = new Calc(0);
 			
 			Calcu.readFile(DireccionArchivo);
 			System.out.println();

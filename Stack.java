@@ -7,7 +7,7 @@
  * @param <E>
  */
 public abstract class Stack<E> {
-	
+	public Stack(){}
 	public abstract void empty();
 	public abstract boolean isEmpty();
 	public abstract void push(E x) ;
